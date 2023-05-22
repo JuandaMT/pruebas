@@ -1,0 +1,209 @@
+/*------------------------------------FONDO-----------------------------------*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+
+.fondo {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#fondo {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+/*------------------------------------MENU-----------------------------------*/
+.menu {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 4em;
+  font-weight: 900;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+.menu ul li {
+  list-style: none;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.menu ul li:hover {
+  color: aqua;
+  translate: 15px 0px;
+  cursor: pointer;
+}
+.cuadradito {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  margin-right: 20px;
+  transition: 0.1s;
+  transform: rotate(45deg);
+}
+.container:hover .cuadradito {
+  scale: 1.7;
+  transform: rotate(315deg);
+  background-color: red;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+#enRojo {
+  color: red;
+}
+#enRojo:hover {
+  color: aqua;
+}
+/*------------------------------------CONOCIMIENTOS-----------------------------------*/
+.conocimientos {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10%;
+  margin-right: 5%;
+  background-color: rgba(70, 70, 70, 0.6);
+}
+.conocimientos .header {
+  background-color: rgba(0, 0, 0, 0.281);
+  color: white;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.conjunto_tecnologias{
+  height: 50%;
+  border-bottom: 1px solid white;
+  padding: 50px 0px 0px 0px;
+}
+/*---------------------CONOCIMIENTOS HTML--------------------*/
+.html{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  
+}
+.tecnologia{
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-left: 15px;
+  width: 40px;
+}
+.html .conocimientos_html{
+  background-color: white;
+  width: 300px;
+  height: 5px;
+  border-radius: 10px;
+  margin: 0px 20px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.html .conocimientos_html .cantidad_html{
+  width: 150px;
+  background-color: aqua;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+}
+/*---------------------CONOCIMIENTOS CSS--------------------*/
+.css{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+.css .conocimientos_css{
+  background-color: white;
+  width: 300px;
+  height: 5px;
+  border-radius: 10px;
+  margin: 0px 20px;
+  box-shadow: 0px 0px 5px black;
+}
+.css .conocimientos_css .cantidad_css{
+  width: 100px;
+  background-color: aqua;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+}
+/*---------------------CONOCIMIENTOS JS--------------------*/
+.js{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+.js .conocimientos_js{
+  background-color: white;
+  width: 300px;
+  height: 5px;
+  border-radius: 10px;
+  margin: 0px 20px;
+  box-shadow: 0px 0px 5px black;
+}
+.js .conocimientos_js .cantidad_js{
+  width: 100px;
+  background-color: aqua;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+}
+/*------------------------------------REDES SOCIALES-----------------------------------*/
+.redes_sociales{
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.github img{
+  width: 50px;
+  height: 50px;
+  transition: 0.2s;
+}
+.linkedin img{
+  width: 50px;
+  height: 50px;
+  transition: 0.2s;
+}
+.instagram img{
+  width: 50px;
+  height: 50px;
+  transition: 0.2s;
+}
+.github, .linkedin, .instagram{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.redes_sociales img:hover{
+  transform: scale(1.4);
+  
+}
